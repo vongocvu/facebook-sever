@@ -130,15 +130,15 @@ const groupRoute = require("./src/routers/group")
 const storieRoute = require("./src/routers/storie")
 
 
-app.use("/v1/auth", authRoute)
-app.use("/v1/message", messageRoute)
-app.use("/v1/groupPublic", groupPublicRoute)
-app.use("/v1/groupPrivate", groupPrivateRoute)
-app.use("/v1/post", postRoute)
-app.use("/v1/postDetail", postDetailRoute)
-app.use("/v1/comment", commentRoute)
-app.use("/v1/group", groupRoute)
-app.use("/v1/storie", storieRoute)
+app.use("/api/v1/auth", authRoute)
+app.use("/api/v1/message", messageRoute)
+app.use("/api/v1/groupPublic", groupPublicRoute)
+app.use("/api/v1/groupPrivate", groupPrivateRoute)
+app.use("/api/v1/post", postRoute)
+app.use("/api/v1/postDetail", postDetailRoute)
+app.use("/api/v1/comment", commentRoute)
+app.use("/api/v1/group", groupRoute)
+app.use("/api/v1/storie", storieRoute)
 
 const port = process.env.PORT || 3000;
 
